@@ -2,33 +2,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
 
-
-/*
-font-family: 'Passion One', sans-serif;
-font-family: 'Righteous', sans-serif;
-font-family: 'Sarala', sans-serif;
-
-
+:root {
+    --fonte1: 'Passion One', sans-serif;
+    --fonte2: 'Righteous', sans-serif;
+    --fonte3: 'Sarala', sans-serif;  
+}
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100%;
     background-color: darkgray;
+    font-family: var(--fonte2);
 }
 
 header {
     background-color:rgb(240, 47, 47);
     color:white;
     text-align: center;
+    font-weight: bolder;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 6vw;
 }
 
 header > p {
@@ -40,6 +43,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -53,7 +58,8 @@ section.imagem {
 }
 
     section.imagem > p {
-        width: 400px;
+       display: inline-block;
+       padding: 5px;
         background-color: rgba(0, 0, 0, 0.308);
     }
 a {
@@ -71,4 +77,5 @@ footer {
     text-align: center;
     color:white;
     padding: 10px;
+    font-family: var(--fonte3);
 }
